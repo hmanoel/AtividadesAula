@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Descubra o Número</string>
+    <string name="lblButton">Enviar</string>
+    <string name="lblButton2">Jogar Novamente</string>
+    <string name="lblAviso"> Informe o número, entre 0 e 10: </string>
+    <string name="lblAviso2"> Informe o número: </string>
+</resources>

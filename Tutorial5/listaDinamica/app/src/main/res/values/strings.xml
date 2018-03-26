@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lista Dinâmica </string>
+    <string name="lbl_MLD"> Manipulando Lista Dinâmica </string>
+    <string name="btn_mostrar"> Mostrar Lista </string>
+    <string name="btn_salvar"> Salvar Contato </string>
+    <string name="lbl_nome"> Nome </string>
+    <string name="lbl_telefone"> Telefone </string>
+</resources>

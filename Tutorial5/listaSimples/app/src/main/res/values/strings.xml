@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListView Simples</string>
+    <string name="lbl_titulo"> Lidando com Listas </string>
+</resources>
