@@ -7,7 +7,7 @@
     tools:context="com.example.alunos.androidqrcodescanner.MainActivity">
 
     <TextView
-        android:id="@+id/lblName"
+        android:id="@+id/rtl_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -15,6 +15,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Name:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.149"
@@ -22,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lblEndereco"
+        android:id="@+id/rtl_Endereco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -30,6 +33,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Endereço:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.16"
@@ -38,7 +44,7 @@
         app:layout_constraintVertical_bias="0.651" />
 
     <TextView
-        android:id="@+id/lbl_nome"
+        android:id="@+id/rtl_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -46,6 +52,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="xyz"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.141"
@@ -54,7 +63,7 @@
         app:layout_constraintVertical_bias="0.563" />
 
     <TextView
-        android:id="@+id/lbl_endereco"
+        android:id="@+id/rtl_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -62,6 +71,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="xyz"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.141"
