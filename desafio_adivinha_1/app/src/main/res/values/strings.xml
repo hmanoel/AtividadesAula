@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Acerte o Número</string>
+    <string name="bt_play">Enviar</string>
+    <string name="bt_new_game">Jogar Novamente</string>
+    <string name="rtl_text">Informe um número,</string>
+    <string name="rtl_text_2">entre 0 e 10:</string>
+</resources>

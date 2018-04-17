@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Desafio_Adivinha_2</string>
+    <string name="won">Finalmente!</string>
+    <string name="lost">Perdeu!</string>
+    <string name="less">É menor!</string>
+    <string name="larger">É maior!</string>
+    <string name="play">Vamos Jogar!</string>
+</resources>
