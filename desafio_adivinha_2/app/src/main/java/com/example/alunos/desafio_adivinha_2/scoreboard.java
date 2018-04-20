@@ -1,13 +1,19 @@
 package com.example.alunos.desafio_adivinha_2;
 
 import android.content.Intent;
+
 import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+
 import android.widget.TextView;
 
-public class scoreboard extends AppCompatActivity{
+public class scoreboard extends AppCompatActivity
+{
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) 
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scoreboard);
 
@@ -31,4 +37,5 @@ public class scoreboard extends AppCompatActivity{
         result_5.setText(number_1);
 
     }
+    
 }

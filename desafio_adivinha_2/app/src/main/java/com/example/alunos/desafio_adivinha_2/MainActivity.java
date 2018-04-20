@@ -1,18 +1,32 @@
 package com.example.alunos.desafio_adivinha_2;
+
 import android.content.Context;
+
 import android.content.Intent;
+
 import android.content.SharedPreferences;
+
 import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+
 import android.widget.Button;
+
 import android.util.Log;
+
 import android.view.View;
+
 import android.widget.TextView;
+
 import android.widget.EditText;
+
 import java.util.Random;
+
 import android.widget.Toast;
+
 public class MainActivity extends AppCompatActivity
 {
+
     Random rand = new Random();
     private int x = rand.nextInt(999) + 1;
     private int attempt = 0;
@@ -21,9 +35,11 @@ public class MainActivity extends AppCompatActivity
     private String number_3 = "";
     private String number_2 = "";
     private String number_1 = "";
+    
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+    
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView visu_2 = (TextView) findViewById(R.id.rtl_1);
@@ -39,9 +55,12 @@ public class MainActivity extends AppCompatActivity
         publisher.putString("number_4", number_4);
         publisher.putString("number_5", number_5);
         publisher.commit();
+        
     }
+    
     public void restart(View v)
     {
+    
         x = rand.nextInt(999) + 1;
         attempt = 0;
         TextView visu_2 = (TextView) findViewById(R.id.rtl_1);
@@ -53,9 +72,12 @@ public class MainActivity extends AppCompatActivity
         text.setText("");
         Button button = (Button) findViewById(R.id.btn);
         button.setEnabled(true);
+        
     }
+    
     public void scoreboard(View v)
     {
+    
         SharedPreferences aux_2 = getPreferences(Context.MODE_PRIVATE);
         String number_5 = aux_2.getString("number_5", "nothing...");
         String number_4 = aux_2.getString("number_4", "Nothing...");
@@ -76,29 +98,43 @@ public class MainActivity extends AppCompatActivity
         bundle.putString("number_1", number_1);
         aux_1.putExtras(bundle);
         startActivity(aux_1);
+        
     }
+    
     public void play(View v)
     {
+    
         EditText text = findViewById(R.id.editText);
         String value = text.getText().toString();
         int number = Integer.parseInt(value);
+        
         if (!(number == x))
         {
+        
             attempt++;
             TextView view3 = (TextView) findViewById(R.id.rtl_2);
-            if(!(number > x)){
+            
+            if(!(number > x))
+            {
+            
                 view3.setText(getResources().getString(R.string.larger));
+                
             }
             else if(!(number < x))
             {
+            
                 view3.setText(getResources().getString(R.string.less));
+                
             }
+            
             String number_user = Integer.toString(attempt);
             TextView view2 = (TextView) findViewById(R.id.rtl_1);
             view2.setText(number_user);
+            
         }
         else
         {
+        
             TextView view = (TextView) findViewById(R.id.rtl_2);
             view.setText(getResources().getString(R.string.won));
             Button button = (Button) findViewById(R.id.btn);
@@ -106,13 +142,17 @@ public class MainActivity extends AppCompatActivity
             x = 0;
             SharedPreferences aux_2 = getPreferences(Context.MODE_PRIVATE);
             String attempt_1 = Integer.toString(attempt);
+
             if (attempt_1.matches(""))
             {
+            
                 Toast toast = Toast.makeText(MainActivity.this,
                         "Insira um número...", Toast.LENGTH_SHORT);
                 toast.show();
                 return;
+                
             }
+            
             number_1 = aux_2.getString("number_1", "Nothing...");
             number_2 = aux_2.getString("number_2", "Nothing...");
             number_3 = aux_2.getString("number_3", "Nothing...");
@@ -131,6 +171,9 @@ public class MainActivity extends AppCompatActivity
             publisher.putString("number_4", number_4);
             publisher.putString("number_5", number_5);
             publisher.commit();
+            
         }
+        
     }
+    
 }
